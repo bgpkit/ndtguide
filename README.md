@@ -1,16 +1,25 @@
 # NDTGuide
 
-NDTGuide is a Python package that aims to provide easy to use quick access to MeasurementLab's (MLab)
-NDT measurement data on Google BigQuery. This library is intended to work **only** on Google Colab
-platform due to the BigQuery and GCP's requirement on service account usage.
+`NDTGuide` is a Python package that aims to provide easy to use quick access to MeasurementLab's (MLab)
+NDT measurement data on Google BigQuery. `NDTGuide` provides an abstract layer around the Google BigQuery interface and 
+MLab's data schema. At its core, it provides a growing number of functions that translate user intentions
+into BigQuery SQL statements. 
 
-## Overview
+This library is intended to work **only** on Google Colab platform.
 
-`NDTGuide` provides an abstract layer around the Google BigQuery interface and MLab's data 
-schema. At its core, it provides a growing number of functions that translate user intentions
-into BigQuery SQL statements.
 
 ## Usage
+
+The full example code of this usage guide is available [here](https://colab.research.google.com/drive/1t8lhfKIP-_JrzdYjXiKuffSLFp1vcnq1?authuser=1#scrollTo=ZuCTx30aa6Qm).
+
+### Install the `ndtguide` Package on Google Colab
+
+Execute the following code block at the very beginning of your Google Colab script to install and 
+import the package.
+```text
+!pip install ndtguide==0.1.1
+from ndtguide import NDTGuide
+```
 
 ### Login with Google Account (Required Step)
 
