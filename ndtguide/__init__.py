@@ -1,1 +1,1 @@
-from .guide import NdtGuide
+from .guide import NDTGuide

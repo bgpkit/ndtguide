@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name='ndtguide',
-    version='0.1.0',
+    version='0.1.1',
     description='MeasurementLab NDT data query guide',
     url='https://github.com/bgpkit/ndtguide',
     author='Mingwei Zhang',
